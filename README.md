@@ -39,6 +39,7 @@ Quoting the [React docs](https://reactjs.org/docs/hooks-reference.html#usereduce
 
 - Multiple, related state values (e.g. form?)
 - New state is based on previous state (i.e. state machine)
+![State](state.png)
 - Optimizing performance by passing dispatch, which React guarantees will stay the same between renders
 
 **If a portion of your state relies on the value of another portion of state, then it is almost certainly a good use case for `useReducer`**
