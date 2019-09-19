@@ -1,14 +1,16 @@
-# useReducer-demo
+# useReducer
 
-## How to use `useReducer`
+## What is `useReducer`
 
-`useReducer` is a primitive React hook that allows you to manage state through dispatching "actions". At minimum, `useReducer` takes two arguments: 
-* `reducer`, which is a reducer function that returns a new state
+`useReducer` is a primitive React hook that allows you to manage state through dispatching "actions". 
+
+At minimum, `useReducer` takes two arguments: 
+* `reducer`, which is a reducer function that returns a *new* state
 * `initState`, which represents the initial state value
 
 ### What's a reducer?
 
-A reducer is a *pure function* that operates on two parameters, `state` and `action`. The reducer returns a new state that is based exclusively on `state` (old state) and `action` (the event and its associated data)
+A reducer is a *pure function* that operates on two parameters, `state` and `action`. The reducer returns a new state that is based exclusively on `state` (old state) and `action` (the event and its associated data). Naturally, the current or "old" state is never mutated. A copy of state is always returned with whatever changes are required.
 
 > old state + action => new state
 
@@ -50,4 +52,7 @@ The reducer can be kept separate of the React component and imported as a separa
 
 Secondly, the dev has fine-grained control over the *when* and *how* a state change happens. The dev has the ability to implement how old and new states compare, performance optimizations around the comparisons.
 
+## Code Example
+
+https://codesandbox.io/s/cool-minsky-d432p
 
